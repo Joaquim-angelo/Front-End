@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+h1{text-align: center;}
+span#icone{
+    text-align: center;
+    display: inline-block;
+    padding-left:120px ;
+}

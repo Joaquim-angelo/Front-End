@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            background-color:lightgray;
+        }
+        nav{
+            background-color: darkgray;
+            color: white;
+            /*adicionado sombra*/
+            box-shadow:2px 2px rgba(0, 0, 0, 0.562);
+            /*arredondamento da borda*/
+            border-radius: 20px 0px;
+            padding: 2px;
+        }
+        /*editando links*/
+        nav > a{
+            text-decoration: none;
+            color: lime;
+        }
+        main{
+            padding: 3px;
+            margin: auto;
+            margin-top: 10px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow:2px 2px rgba(0, 0, 0, 0.562);
+        }
+        article>aside{
+            color: white;
+            background-color: darkgray;
+            box-shadow: inset 1px 1px 1px black;
+            /*inset: sombra pra dentro*/
+        }
+        footer{
+            color: white;
+            background-color: black;
+        }
+        #assuntos{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+        <p>essa parte é reservada apenas para o cabeçalho do site/documento html</p>
+    </header>
+    <nav>
+        <p>parte reservada ao ambiente de navegação</p>
+        <a href="#">adicionado link</a>
+    </nav>
+    <main>
+        <p><strong>Parte principal do site/documento html</strong></p>
+        <section id="assuntos">
+            <h2>Industria</h2>
+            <p>parte reservada as sessões do seu site</p>
+        </section>
+        <section id="assuntos">
+            <article>
+                <h2>Tecnologia</h2>
+                <p>dentro de uma sessão podemos criar um artigo</p>
+                <aside>
+                    <p>comentário relativo ao artigo</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Parte dedicada ao rodapé do site</p>
+    </footer>
+</body>
+</html>

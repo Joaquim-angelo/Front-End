@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 7</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post">
+        <h1>Lista de Opções</h1>
+        <h2>Tipo 1</h2>
+        <p>
+            <label for="idio">Idioma</label>
+            <select name="idioma" id="idio">
+                <optgroup label="Grupo 1">
+                    <option value="Alemão">Alemão</option>
+                    <option value="Espanhol">Belga</option>
+                    <option value="Francês">Francês</option>
+                    <option value="Grego">Grego</option>
+                </optgroup>
+                <optgroup label="Grupo 2">
+                    <option value="Italiano">Italiano</option>
+                    <option value="Inglês">Inglês</option>
+                    <option value="Mandarin">Mandarin</option>
+                    <option value="Português"selected>Português</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+        <h2>Tipo 2</h2>
+        <p>
+            permite que digitemos uma opção que não está na lista
+        </p>
+        <p>
+            <label for="iprof">Profissão: </label>
+            <input type="text" nome="prof" id="iprof" list="listprof">
+            <datalist id="listprof">
+                <option>Administrador</option>
+                <option>Advogado</option>
+                <option>Motorista</option>
+                <option>Programador</option>
+                <option>Vendedor</option>
+            </datalist>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="limpar">
+        </p>
+        <h2>Tipo 3</h2>
+        <p>
+            textarea é infinito
+        </p>
+        <p>
+            <label for="imsg">Mensagem: </label><br>
+            <textarea name="msg" id="msg" cols="50" rows="15"></textarea>
+        </p>
+    </form>
+</body>
+</html>

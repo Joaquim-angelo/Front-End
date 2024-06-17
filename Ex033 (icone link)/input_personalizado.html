@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        body{
+            color: white;
+            background-color: rgba(10, 10, 109, 0.767);
+        }
+        h1{
+            text-align: center;
+            padding: 5px;
+        }
+        div{
+            margin-top: 20px;
+            transform: translate(+38%,+450%);
+        }
+        input[type='file']{
+            display: none;
+        }
+        label{
+            display: inline;
+            color: white;
+            background-color: red;
+            text-align: center;
+            padding: 10px;
+            font-size: 20px;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.473);
+            /*o cursor vira uma mão*/
+            cursor: pointer;
+        }
+        /*posição do icone no label*/
+        span{
+            transform: translate(-10%,20%);
+        }
+    </style>
+</head>
+<body>
+    <h1>MENU</h1>
+    <div>
+        <input type="file" name="arq" id="iarq">
+        <label for="iarq">
+        <!--Adicionar imagem no label-->
+        <span class="material-symbols-outlined">
+                cloud_upload
+        </span>
+        Enviar arquivo</label>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/*versão demais midias*/
+
+/*Typical device breakpoints
+-Pequenas telas(-600px)
+-celular(600px-770px)
+-tablet(770px-992px)
+-Desktop(992px-1200px)
+-Grandes telas(+1200px)
+ */
+
+@media print{
+    /*a versão de impressora não imprime imagens*/
+    body{
+        background-image: url(../imagens/back-print.jpg);
+    }
+    main{
+        border: 2px solid black;
+    }
+
+    main::after{
+        content: "impressão feita no site github.com";
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:992px){
+    /*tablet*/
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    img#phone{display: none}
+    img#tablet{display: block;}
+    img#print{display: none;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+}
+
+@media screen and (min-width: 992px) and (max-width:1200px){
+    /*desktop*/
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    img#phone{display: none}
+    img#tablet{display: none;}
+    img#print{display: none;}
+    img#pc{display: block;}
+    img#tv{display: none;}
+}
+
+@media screen and (min-width: 1200px){
+    /*grandes telas*/
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    img#phone{display: none}
+    img#tablet{display: none;}
+    img#print{display: none;}
+    img#pc{display: none;}
+    img#tv{display: block;}
+}

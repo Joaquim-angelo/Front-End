@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        /*configurar borda*/
+        table{
+            width: 400px;
+            /*borda juntas ou separadas*/
+            border-collapse: collapse;
+            border: 2px solid red;
+        }
+        td{
+            border: 1px solid black;
+            padding: 2px;
+        }
+        tr.linha{
+            background-color: grey;
+        }
+        td.dado{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: red;">Tabela</h1>
+    <table>
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr class="linha">
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td class="dado">B3</td>
+            <td>C3</td>
+        </tr>
+    </table>
+</body>
+</html>

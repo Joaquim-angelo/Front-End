@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 3</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+        }
+        caption{
+            text-align: left;
+            padding-bottom: 10px;
+        }
+        td,th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        td.numero{
+            text-align: right;
+        }
+        thead{
+            background-color:rgb(0, 0, 0);
+            color: white;
+        }
+        /*nth-chield(2n): de 2 em 2*/
+        tbody>tr:nth-child(2n){
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas Grandes</h1>
+    <table>
+        <caption>População de estados brasileiros</caption>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">44 411 238</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">20 538 718</td>
+            </tr>
+            <tr>
+                <td>Rio de janeiro</td>
+                <td class="numero">16 054 524</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14 141 626</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="numero">11 444 380</td>
+            </tr>
+            <tr>
+                <td>....</td>
+                <td class="numero">....</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th>total de habitantes</th>
+            <td class="numero">203 062 512</td>
+        </tfoot>
+    </table>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*editar links*/
+        a{
+            color:lime ;
+            /*Remover sublinhado*/
+            text-decoration: none;
+        }
+        /*links já visitados*/
+        a:visited{
+            color: black;
+        }
+        a:hover{
+            color: aquamarine;
+            text-decoration: underline;
+        }
+        /*cor do link no momento do clique*/
+        a:active{
+            color: darkblue;
+        }
+        /*depois de cada link*/
+        a::after{
+            /*content = conteudo*/
+            content: ' [link]';
+        }
+        /*antes de cada link*/
+        a::before{
+            content: '≫ ' ;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Links</h1>
+    <ul><a href="https://roadmap.sh/frontend">Roadmap FrontEnd</a></ul>
+    <ul><a href="https://roadmap.sh/backend">Roadmap BackEnd</a></ul>
+    <ul><a href="https://roadmap.sh/full-stack">Roadmap full-stack</a></ul>
+</body>
+</html>

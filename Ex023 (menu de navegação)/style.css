@@ -1,0 +1,47 @@
+@charset 'UTF-8';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: bourder border-box;
+}
+body{
+    /*configurando imagem de fundo*/
+    background-image:linear-gradient(#00000001,#00000063),url(ceu\ estrelado.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+    min-height: 100vh;
+}
+.container{
+    max-width: 1400px;
+    padding: 3%;
+    margin: 0 auto;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .logo{
+    font-size: 35px;
+    font-style: italic;
+    color: white;
+    font-weight: bold;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 30px;
+    transition: 0.6s;
+}
+nav ul li a:hover{
+    background-color: aquamarine;
+}

@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+*{
+    margin: 10px;
+    padding: 10px;
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+menu{
+    /*não exibir menu na impressão*/
+    display: none;
+}
+
+article::after{
+    content: 'Esse artigo foi impresso 02/02/2024';
+    font-size: 13px;
+}
+
+article{
+    width: 100%;
+}
