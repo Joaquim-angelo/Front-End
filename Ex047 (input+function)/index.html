@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somar valores</title>
+    <style>
+        body{
+            background-color: rgba(0, 0, 0, 0.151);
+        }
+        section{
+            width: 330px;
+            height: 150px;
+            background-color: white;
+            /*configurando borda*/
+            border: 5px solid black;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 2px 2px 2px black;
+            /*centralizando*/
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-60%);
+        }
+        input[type=number]{
+            width: 100px;
+            height: 25px;
+        }
+        input[type=button]{
+            width: 70px;
+            height: 30px;
+        }
+        #resultado{
+            padding-top: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Somando Valores</h1>
+        <input type="number" name="n1" id="idn1">
+        <input type="number" name="n2" id="idn2">
+        <input type="button" value="somar" onclick="somar()">
+        <div id="resultado"></div>
+        <script src="arquivo.js"></script>
+    </section>
+</body>
+</html>

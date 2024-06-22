@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#area{
+            width: 400px;
+            height: 300px;
+            color: white;
+            background-color: cadetblue;
+            text-align: center;
+            line-height: 300px;
+            font-size: 30px;
+            /*Centralizando div*/
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-40%,-50%);
+        }
+    </style>
+</head>
+<body>
+    <div id="area">Clique na Div</div>
+    <script>
+        //conectando a variável a div
+        var area=window.document.getElementById('area')
+        //adicionando evento de acordo com a ação
+        area.addEventListener('click',clicar)
+        area.addEventListener('mouseenter',entrar)
+        area.addEventListener('mouseout',sair)
+        //funções dos eventos
+        function clicar(){
+            area.innerText='Clicado'
+        }
+        function entrar(){
+            area.style.background='lime'
+        }
+        function sair(){
+            area.style.background='red'
+        }
+    </script>
+</body>
+</html>

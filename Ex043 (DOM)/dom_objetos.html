@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seleção de Objetos do HTML</title>
+</head>
+<body>
+    <p>Aprender a usar <strong>Dom</strong> em JavaScipt</p>
+    <div id="msg">Selecionado objetos Div</div>
+    <div class="div_2">Mensagem</div>
+    <script>
+        //Selecionando o corpo da Tela
+        var corpo= window.document.body
+        corpo.style.background='lightblue'
+
+        //selecionando paragrafo por nome
+        var p1=window.document.getElementsByTagName('p')[0]
+        //('p') é a tag selecionada
+        //[0] representa a posição do <p>
+        p1.style.color='yellow'
+        window.document.write(p1.innerHTML)
+
+        //Selecionando por ID
+        var d=window.document.getElementById('msg')
+        window.document.write('<br>'+d.innerText)
+        //mudando texto da Div msg
+        d.innerText='Mudando texto da Div'
+        
+        //selecionando objeto por seletor
+        var d2=window.document.querySelector('div.div_2')
+        d2.style.color='green'
+    </script>
+</body>
+</html>
