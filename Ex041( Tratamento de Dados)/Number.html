@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números</title>
+</head>
+<body>
+    <script>
+        var n=1640.7
+        //numeros de casas décimais exibidas
+        document.write(n.toFixed(2)+'<br>')
+        //colocando em Real Brasileiro
+        document.write(n.toLocaleString('pt-BR',{style: 'currency',currency: 'BRL'}))
+        document.write('<br>')
+        document.write(n.toLocaleString('pt-BR',{style: 'currency',currency: 'EUR'}))
+    </script>
+</body>
+</html>

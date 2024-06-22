@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Lógicos</title>
+</head>
+<body>
+    <script>
+        var n1=8;
+        var n2=5;
+        // &&(e)
+        window.alert(n1>n2 && n1%2==0)
+        //true && true= true
+        window.alert(n1>n2 && n1%2!=0)
+        //true && false= false
+        window.alert(n2>n1 && n1%2==0)
+        //false && true= false
+        window.alert(n1<n2 && n1%2==1)
+        //false && false = false
+
+        // ||(ou)
+        window.alert(n1>n2 || n1%2==0)
+        //true || true= true
+        window.alert(n1>n2 || n1%2!=0)
+        //true || false= true
+        window.alert(n2>n1 || n1%2==0)
+        //false || true= true
+        window.alert(n1<n2 || n1%2==1)
+        //false && false = false
+    </script>
+</body>
+</html>
