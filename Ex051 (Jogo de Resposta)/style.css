@@ -1,0 +1,94 @@
+@charset 'UTF-8';
+
+h1{
+    text-align: center;
+}
+
+header{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-130%);
+}
+
+body{
+    background-color:beige ;
+}
+
+input[type=radio]{
+    width: 230px;
+    height: 20px;
+    border: 2px solid black;
+}
+
+input[type=button]{
+    margin-top: 50px;
+    width: 130px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,+250%);
+}
+
+div#imagem{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+#opc_1{
+    margin: 10px;
+    width: 150px;
+    border: 2px solid black;
+    padding: 14px;
+    text-align: center;
+}
+
+#opc_2{
+    margin: 10px;
+    width: 150px;
+    border: 2px solid black;
+    padding: 14px;
+    text-align: center;
+}
+
+#opc_3{
+    margin: 10px;
+    width: 150px;
+    border: 2px solid black;
+    padding: 14px;
+    text-align: center;
+}
+
+#opc_4{
+    margin: 10px;
+    width: 150px;
+    border: 2px solid black;
+    padding: 14px;
+    text-align: center;
+}
+
+section{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-25%);
+}
+
+div.cidade:hover{
+    background-color: aqua;
+}
+
+img{
+    max-width:280px ;
+}
+
+#resultado{
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%,+130%);
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Escolha uma opção</h1>
+        <p>Qual a capital dos Estados Unidos: </p>
+        <img src="washington.jpg" alt="">
+    </header>
+    <div id="imagem">
+    </div>
+    <section>
+        <div id="opc_1">
+            <label for="nova_iorque">Nova Iorque</label>
+            <input type="radio" name="resp" id="nova_iorque">
+        </div>
+        <div id="opc_2">
+            <label for="washington">Washington</label>
+            <input type="radio" name="resp" id="washington">
+        </div>
+        <div id="opc_3">
+            <label for="las_vegas">Las Vegas</label>
+            <input type="radio" name="resp" id="las_vegas">
+        </div>
+        <div id="opc_4">
+            <label for="texas">Texas</label>
+            <input type="radio" name="resp" id="texas">
+        </div>
+        <input type="button" value="Responder" onclick="responder()">
+    </section>
+    <div id="resultado"></div>
+    <script src="arquivo.js"></script>
+</body>
+</html>
