@@ -3,6 +3,8 @@
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: antiquewhite;
+    width: 100vw;
+    height: 100vh;
 }
 
 main{
@@ -16,6 +18,7 @@ input[type=button]{
     margin-top: 10px;
     width: 100px;
     height: 30px;
+    margin-bottom: 20px;
 }
 
 input[type=text]{
