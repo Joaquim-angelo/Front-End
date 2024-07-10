@@ -1,0 +1,38 @@
+@charset 'UTF-8';
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: antiquewhite;
+}
+
+main{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+input[type=button]{
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+}
+
+input[type=text]{
+    margin-top: 10px;
+    width: 250px;
+    height: 25px;
+}
+
+div{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,+30%);
+    border: 2px solid black;
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    text-align: center;
+    background-color: aliceblue;
+}
