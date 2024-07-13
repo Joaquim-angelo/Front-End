@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <header>
+            <h1>Cadastrando Pessoa</h1>
+        </header>
+        <main>
+            <label for="idnome">Nome: </label>
+            <input type="text" name="nome" id="idnome">
+            <br><label for="idtel">Telefone: </label>
+            <input type="text" name="telefone" id="idtel">
+            <br><label for="iddata">Nascimento</label>
+            <input type="date" name="data" id="iddata">
+            <br><input type="button" value="Cadastrar" onclick="enviar()" id="bnt1">
+            <input type="button" value="exibir"
+            onclick="exibir()" id="bnt2">
+            <div id="msg"></div>
+        </main>
+    </section>
+    <script src="arquivo.js"></script>
+</body>
+</html>

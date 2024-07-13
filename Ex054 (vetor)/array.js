@@ -1,4 +1,6 @@
 let vetor=[4,1,3,5,2]
+//remover último elemento do array
+vetor.pop()
 //adicionar elemento
 vetor.push(8)
 //ordenar elementos
