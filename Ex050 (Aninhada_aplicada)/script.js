@@ -45,7 +45,7 @@ function verificar(){
         }
         imagem.style.textAlign='center'
         imagem.innerHTML=`Detectamos ${genero} com ${idade} anos`
-        //adicionando a imagem
+        //adicionando a imagem na div
         imagem.appendChild(img)
     }
 }
