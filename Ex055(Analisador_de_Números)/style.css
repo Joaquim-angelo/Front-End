@@ -1,0 +1,32 @@
+@charset 'UTF-8';
+
+body{
+    background-color: lightblue;
+    font: normal 15pt;
+    color: white;
+}
+
+header{
+    text-align: center;
+}
+
+section{
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 425px;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.582) 5px 5px 10px;
+    height: 280px;
+    color: black;
+}
+
+footer{
+    text-align: center;
+    font-style: italic;
+}
+
+select{
+    width: 400px;
+    margin: 10px;
+}
