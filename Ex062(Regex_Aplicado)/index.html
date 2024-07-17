@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="tela">
+        <h1>Analise</h1>
+        <p>Escreva o CPF da forma: xxx.xxx.xxx-xx <br>
+        Escreva o ddd primeiro e depois Telefone da forma:9xxxx-xxxx</p>
+        <label for="idcpf">CPF</label>
+        <input type="text" name="cpf" id="idcpf"
+        placeholder="xxx.xxx.xxx-xx">
+        <script src="arquivo.js"></script>
+        <br><label for="idtel">Telefone</label>
+        <input type="number" name="ddd" id="idddd" placeholder="dd" maxlength="2" size="2">
+        <input type="text" name="tel" id="idtel"
+        placeholder="9xxxx-xxxx">
+        <br><input type="button" value="Enviar" onclick="enviar()">
+        <section id="divs">
+            <div id="msg_1"></div>
+            <div id="msg_2"></div>
+            <div id="msg_3"></div>
+        </section>
+    </section>
+</body>
+</html>
