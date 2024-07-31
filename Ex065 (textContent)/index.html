@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ajax</title>
+    <title>textContent</title>
     <style>
         input[type=text]{
             width:400px ;
@@ -14,12 +14,13 @@
 <body>
     <input type="text" name="txt" id="idtxt">
     <p id="msg"></p>
-
     <script>
         let txt=document.getElementById("idtxt")
         let msg=document.getElementById("msg")
 
+        //keyup: acionado na digitação de uma tecla
         txt.addEventListener("keyup",function(){
+            //textContent: escreve automaticamente
             msg.textContent="Texto Digitado: "+txt.value;
         })
     </script>

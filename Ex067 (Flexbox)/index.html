@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .container{
+            display: flex;
+            /*Posição das divs: coluna ou linha*/
+            flex-direction: row;
+            /*quebra de linha se preciso*/
+            flex-wrap: wrap;
+            /*alinhar items*/
+            justify-content: center;
+            /*alinhar objetos*/
+            align-items: center;
+        }
+        .item{
+            margin: 10px;
+            width: 80px;
+            height: 40px;
+            padding: 50px;
+            border: 2px solid black;
+            color: black;
+        }
+        .item:hover{
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+</body>
+</html>
