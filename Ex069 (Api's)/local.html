@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localização</title>
+</head>
+<body>
+    <input type="button" value="Localização" onclick="local()">
+    <div id="tela"></div>
+
+    <script>
+        const tela=document.getElementById('tela')
+        function local(){
+            if(navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(mostrar_posicao)
+            }else{
+                tela.innerHTML='Geolocation não disponível no navegador'
+            }
+        }
+        function mostrar_posicao(position){
+            tela.innerHTML="<br>Latitude: "+position.coords.latitude + 
+            "<br>Longitude: "+position.coords.longitude;
+        }
+    </script>
+</body>
+</html>

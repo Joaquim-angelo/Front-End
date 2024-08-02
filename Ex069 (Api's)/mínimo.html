@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Digite um número maior ou igual a 100</h1>
+    <input id="idnum" type="number" min="100">
+    <button onclick="analise()">OK</button>
+    <p id="tela"></p>
+
+    <script>
+        const tela= document.getElementById('tela');
+        function analise() {
+            //rangerUnderflow: abaixo do mínimo
+           if (idnum.validity.rangeUnderflow) {
+              tela.innerHTML = "valor menor que 100";
+            }else{
+              tela.innerHTML=" valor válido"
+            }
+        }
+</script>
+</body>
+</html>

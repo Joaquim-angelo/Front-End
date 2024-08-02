@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador</title>
+</head>
+<body>
+  <h1>Digite um número entre 100 e 300</h1>
+    <input id="idnum" type="number" min="100" max="300" required>
+    <button onclick="validador()">OK</button>
+    <p id="tela"></p>
+    <script>
+        const tela=document.getElementById('tela')
+        function validador() {
+          const num = document.getElementById("idnum");
+          //se o numero não for válido
+          if (!num.checkValidity()) {
+            tela.innerHTML = num.validationMessage;
+          }else{
+            tela.innerHTML="Número válido";
+          }
+        }
+    </script>
+</body>
+</html>

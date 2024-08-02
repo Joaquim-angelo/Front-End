@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="tela"></p>
+    <script>
+        let tela=document.getElementById('tela')
+        //LocaStorage: armazena e recupera dados no navegador
+        localStorage.setItem("nome","Joaquim");
+        tela.innerHTML = localStorage.getItem("nome");
+    </script>
+</body>
+</html>
