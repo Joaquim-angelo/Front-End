@@ -1,0 +1,21 @@
+{
+  "name": "primeiro-pacote",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Front-End"
+  },
+  "author": "Joaquim Angelo",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.3.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
+}
