@@ -1,0 +1,15 @@
+#estilo-1 {
+  width: 250px;
+  height: 400px;
+  background-color: black;
+}
+
+#estilo-2 {
+  width: 250px;
+  height: 200px;
+  background-color: greenyellow;
+}
+
+body {
+  display: block;
+}

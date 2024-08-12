@@ -19,6 +19,8 @@ function enviar(){
 
     if(validador_ddd==null){
         msg2.innerHTML="ddd inválido" 
+    }else{
+        msg2.innerHTML=""
     }
 
     if(validador_tel==null){

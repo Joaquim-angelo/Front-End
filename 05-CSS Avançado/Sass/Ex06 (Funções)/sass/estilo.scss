@@ -1,0 +1,19 @@
+@function aleatorio(){
+    $valor: random(10);
+    @return $valor*50;
+}
+
+@mixin tamanho(){
+  width: #{aleatorio()}px;
+  height: #{aleatorio()}px;
+}
+
+#estilo-1{
+    @include tamanho();
+    background-color: black;
+}
+
+#estilo-2{
+    @include tamanho();
+    background-color: greenyellow;
+}
