@@ -1,0 +1,22 @@
+//criando mixin simples
+@mixin mensagem{
+    color: white;
+    font-size: 20px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.vermelho{
+    @include mensagem();
+    background-color: red;
+}
+
+//mixin usando parâmetro
+@mixin borda($cor,$largura){
+    border: $largura solid $cor;
+    padding: 5px;
+}
+
+.azul{
+    @include borda(blue,2px)
+}

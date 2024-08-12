@@ -1,0 +1,10 @@
+.preto{
+    width: 300px;
+    height: 100px;
+    background-color: black;
+}
+
+.azul{
+    @extend .preto;
+    background-color: blue;
+}
