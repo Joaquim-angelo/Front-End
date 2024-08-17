@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botões</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid mt-3">
+        <h1>Botões</h1>
+        <h2>Tipos</h2>
+        <a href="#" class="btn btn-success">Botão Link</a>
+        <button type="button" class="btn btn-primary">Button</button>
+        <input type="button" value="Botão input" class="btn btn-secondary">
+        <input type="submit" value="Botão Submit" class="btn btn-warning">
+        <input type="reset" value="Botão Reset" class="btn btn-outline-danger ">
+    </div>
+    <div class="container-fluid mt-3">
+        <h2>Tamanhos</h2>
+        <button type="button" class="btn btn-primary btn-lg">Grande</button>
+        <button type="button" class="btn btn-primary">Padrão</button>
+        <button type="button" class="btn btn-primary btn-sm">Pequeno</button>
+    </div>
+    <div class="container-fluid mt-3">
+        <h2>Botão block level</h2>
+        <!--gap-n: onde n é a quantidade de botões-->
+        <div class="d-grid gap-2">
+            <button type="button" class="btn btn-primary btn-block">Botão Block</button>
+            <button type="button" class="btn btn-secondary btn-block">Botão Block</button>
+        </div>
+    </div>
+    <div class="container-fluid mt-3">
+        <h2>Ativado\ Desativado</h2>
+        <!--active: botão pressionado-->
+        <button type="button" class="btn btn-primary active">Botão Ativado</button>
+        <!--desactive: botão não clicável-->
+        <button type="button" class="btn btn-primary" disabled>Botão Desativado</button>
+    </div>
+    <div class="container-fluid mt-3">
+        <h2>Botões Giratórios</h2>
+        <button class="btn btn-primary">
+            <span class="spinner-border spinner-border-sm"></span>
+            Carregando
+        </button>
+        <button class="btn btn-primary"  disabled>
+            <span class="spinner-grow spinner-grow-sm"></span>
+            Carregando
+        </button>
+    </div>
+</body>
+</html>
