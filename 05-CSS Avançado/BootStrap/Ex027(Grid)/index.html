@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!--O sistema de grade do Bootstrap é construído com flexbox e permite até 12 colunas na página.-->
+    <div class="container mt-3">
+        <h2>Estrutura Básica Grids</h2>
+        <!--vamos criar várias linhas com distribuições diferentes-->
+        <p>Redimensione a tela para ver o efeito do grid</p>
+
+        <!--2 grids de 50%: sm-6-->
+        <div class="row">
+            <div class="col-sm-6 bg-primary text-white">50%</div>
+            <div class="col-sm-6 bg-dark text-white">50%</div>
+        </div>
+        <br>
+
+        <!--para aumentar a largura para digitar p-3-->
+        <div class="row">
+            <div class="col-sm-6 bg-primary p-3 text-white">50%</div>
+            <div class="col-sm-6 bg-dark p-3 text-white">50%</div>
+        </div>
+        <br>
+
+        <!--3 grids de 33%: sm-4-->
+        <div class="row">
+            <div class="col-sm-4 bg-primary text-white">33%</div>
+            <div class="col-sm-4 bg-dark text-white">33%</div>
+            <div class="col-sm-4 bg-primary text-white">33%</div>
+        </div>
+        <br>
+
+        <!--4 grids de 25%: sm-->
+        <div class="row">
+            <div class="col-sm bg-primary text-white">25%</div>
+            <div class="col-sm bg-dark text-white">25%</div>
+            <div class="col-sm bg-primary text-white">25%</div>
+            <div class="col-sm bg-dark text-white">25%</div>
+        </div>
+    </div>
+
+    <!--sm: usado para grids pequenos(>=567px)-->
+    <!--md: para grids médios (>=768px)-->
+    <!--lg: para grids grandes (>=992px)-->
+    <!--xl: para gris extragrandes (>=1200px)-->
+</body>
+</html>
