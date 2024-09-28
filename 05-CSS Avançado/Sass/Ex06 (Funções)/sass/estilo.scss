@@ -1,3 +1,4 @@
+/*a cada compilação teremos valores diferentes de altura e largura*/
 @function aleatorio(){
     $valor: random(10);
     @return $valor*50;
